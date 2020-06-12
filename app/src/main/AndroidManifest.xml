@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tejash.onlineexam">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.SEND"/>
+
+    <supports-screens android:resizeable="true"
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true">
+    </supports-screens>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Online Test"
+        tools:replace="label"
+        android:roundIcon="@drawable/ic_launcher"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.tejash.onlineexam.View.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tejash.onlineexam.Auth_Controller.SignUp"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.tejash.onlineexam.Auth_Controller.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.tejash.onlineexam.Splash_Activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.tejash.onlineexam.Auth_Controller.ResetPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tejash.onlineexam.Attempt_Quiz_Section.AttemptTest"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tejash.onlineexam.Attempt_Quiz_Section.Tests"
+            android:label="@string/title_activity_tests"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tejash.onlineexam.View.AddDetails"
+            android:label="@string/title_activity_UPdate"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.tejash.onlineexam.Results_section.ResultsAdmin"
+            android:label="Results:ADMIN"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tejash.onlineexam.Results_section.ResultsAdminDetailed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.tejash.onlineexam.View.AboutUsActivity"
+            android:label="About Us!">
+        </activity>
+
+        <activity
+            android:name="com.tejash.onlineexam.Splash_Activity.SplashAnimation"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name="com.tejash.onlineexam.Splash_Activity.Splash_create_quiz"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name="com.tejash.onlineexam.Create_Quiz.create_quiz_main"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name="com.tejash.onlineexam.Create_Quiz.Custom_quiz"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity
+            android:name="com.tejash.onlineexam.Chat_Section.Chat_Handler"
+            android:label="Chat"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <service
+            android:name="com.tejash.onlineexam.NotificationActivity.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.tejash.onlineexam.NotificationActivity.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.tejash.onlineexam.NotificationActivity.NotificationService" />
+
+        <activity android:name="com.tejash.onlineexam.Results_section.GetDetailReport"
+            android:label="Detailed Report"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+
+        <!--Prod id - ca-app-pub-9011665308455012~4528069347-->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+    </application>
+</manifest>

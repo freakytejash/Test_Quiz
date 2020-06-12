@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "258976100671",
+    "firebase_url": "https://online-exam-d9966.firebaseio.com",
+    "project_id": "online-exam-d9966",
+    "storage_bucket": "online-exam-d9966.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258976100671:android:73f51d9971d55adbb9238a",
+        "android_client_info": {
+          "package_name": "com.tejash.onlineexam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258976100671-ib05sac9bs9da0b57ke65u49fq2bst4m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tejash.onlineexam",
+            "certificate_hash": "354cf57aeee63353c19d38e0327ca8d4c779b9a9"
+          }
+        },
+        {
+          "client_id": "258976100671-ndbvkr362vgcl2dr9c8iilgq6i7gi4dl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAF7n0uUJdG5Pz_6Y67Hp4aBTWQjRqZSxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258976100671-ndbvkr362vgcl2dr9c8iilgq6i7gi4dl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
